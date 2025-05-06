@@ -1,0 +1,892 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --grey:#666666;
+  --twhite:rgba(255,255,255, 0.85);
+
+/* Waterloo Colours */
+  --UW1: #FFFFAA; /* Lightest Yellow - Light Background with black ...Top Banner and Buttons with white font, H1 color */
+  --tUW1: rgba(255,255,170, 0.25);
+  --UW2: #FFEA3D; /* Light Yellow - Icons - Buttons with black, ...not enough contrast for black or white font */
+  --tUW2: rgba(255,234,61, 0.15);
+  --UW3: #FFD54F; /* Primary Yellow - Icons, Headings with black ...  Background with black font only, H4 background */
+  --tUW3: rgba(255,213,79, 0.10);
+  --UW4: #E4B429; /* Dark Yellow - Callout borders, Heading borders ...light background with black */
+  --tUW4: rgba(228,180,41, 0.05);
+  --UW11: #DFDFDF; /* 15% Black - ...headings with white */
+  --UW21: #A2A2A2; /* 35% Black - ...enough contrast for PPTcolor5 */
+  --UW31: #787878; /* 50% Black - */
+
+/* Microsoft Colours */
+  --Microsoft1: #99E000; /* Light Green- Light Background with black ...Top Banner and Buttons with white font, H1 color */
+  --tMicrosoft1: rgba(153,224,0, 0.25);
+  --Microsoft2: #7FBA00; /* Primary Green - Icons - Buttons with black, ...not enough contrast for black or white font */
+  --tMicrosoft2: rgba(127,186,0, 0.15);
+  --Microsoft3: #6DC2E9; /* Light Blue - Icons, Headings with black ...  Background with black font only, H4 background */
+  --tMicrosoft3: rgba(109,194,233, 0.10);
+  --Microsoft4: #0072C6; /* Primary Blue- Callout borders, Heading borders ...light background with black */
+  --tMicrosoft4: rgba(0,114,198, 0.05);
+
+/* AltaML Colours */
+--AltaML1: #e8a123;
+--tAltaML1: rgba(232,161,35, 0.25);
+--AltaML2: #e8a123;
+--tAltaML2: rgba(232,161,35, 0.25);
+--AltaML3: #00a7be;
+--tAltaML3: rgba(0,167,190, 0.25);
+--AltaML4: #00426c;
+--tAltaML4: rgba(0,66,108, 0.25);
+
+/* Manulife Colours */
+  --Manulife1: #00A34C; /* Lightest Yellow - Light Background with black ...Top Banner and Buttons with white font, H1 color */
+  --tManulife1: rgba(0,163,76, 0.25);
+  --Manulife2: #007537; /* Light Yellow - Icons - Buttons with black, ...not enough contrast for black or white font */
+  --tManulife2: rgba(0,117,55, 0.15);
+  --Manulife3: #00693C; /* Primary Yellow - Icons, Headings with black ...  Background with black font only, H4 background */
+  --tManulife3: rgba(0,105,60, 0.10);
+  --Manulife4: #06370A; /* Dark Yellow - Callout borders, Heading borders ...light background with black */
+  --tManulife4: rgba(6,55,10, 0.05);
+
+/* Deloitte Colours */
+   --Deloitte1: #62B5E5; /* Light Blue - Light Background with black ...Top Banner and Buttons with white font, H1 color */
+  --tDeloitte1: rgba(98,181,229, 0.25);
+  --Deloitte2: #0076A8; /* Primary Blue - Icons - Buttons with black, ...not enough contrast for black or white font */
+  --tDeloitte2: rgba(0,118,168, 0.15);
+  --Deloitte3: #86BC25; /* Primary Green - Icons, Headings with black ...  Background with black font only, H4 background */
+  --tDeloitte3: rgba(134,188,37, 0.10);
+  --Deloitte4: #2C5234; /* Dark Green - Callout borders, Heading borders ...light background with black */
+  --tDeloitte4: rgba(44,82,52, 0.05);
+
+
+/* Concept Colours */
+  --Concept1: #FBE289; /* Light Yellow - Light Background with black ...Top Banner and Buttons with white font, H1 color */
+  --tConcept1: rgba(251,226,137, 0.25);
+  --Concept2: #f8d03f; /* Primary Yellow - Icons - Buttons with black, ...not enough contrast for black or white font */
+  --tConcept2: rgba(248,208,63, 0.15);
+  --Concept3: #EC63B4; /* Light Pink - Icons, Headings with black ...  Background with black font only, H4 background */
+  --tConcept3: rgba(236,99,180, 0.10);
+  --Concept4: #E31D93; /* Primary Pink - Callout borders, Heading borders ...light background with black */
+  --tConcept4: rgba(227,29,147, 0.05);
+
+/* D2L Colours */
+  --D2L1: #29A6FF; /* Light Blue - Light Background with black ...Top Banner and Buttons with white font, H1 color */
+  --tD2L1: rgba(41,166,255, 0.25);
+  --D2L2: #006FBF; /* Primary Blue - Icons - Buttons with black, ...not enough contrast for black or white font */
+  --tD2L2: rgba(0,111,191, 0.15);
+  --D2L3: #FFBA48; /* Light Orange - Icons, Headings with black ...  Background with black font only, H4 background */
+  --tD2L3: rgba(255,186,72, 0.10);
+  --D2L4: #E87511; /* Primary Orange - Callout borders, Heading borders ...light background with black */
+  --tD2L4: rgba(232,117,17, 0.05);
+
+/* Vidyard Colours */
+  /* Introduction to Video Marketing */
+  --vidyardcolor1: #1E4840; /* headings with white */
+  --vidyardcolor2: #0C084D; /* headings with white */
+  --vidyardcolor3: #46DB83; /* buttons & icons with black */
+  --vidyardcolor4: #EBFFF1; /* light background with black */
+  --vidyardcolor5: #1B1A82; /* headings with white */
+
+ } 
+body {font-family: 'Roboto', sans-serif; font-size: 1.2rem; font-weight: 300;}
+
+/* HEADINGS */
+h1,h2,h3,h4,h5,h6,th,.btn{font-family: 'Barlow Condensed', sans-serif;}
+h1{padding: 1em; text-align:center; margin-bottom: 0.8em;}
+h1 i {margin-right: 0.5em;}
+h2 {padding: 1rem; margin: 1rem 0px 1rem 0px;font-size: calc(1.375rem + 1.5vw); text-align: center;}
+h2, h4, h6, h4 .accordion-button {font-weight: 700;} 
+h3 {font-size: calc(1.325rem + .9vw);}
+h3,h5,h6,th,.btn{font-weight: 400;}
+h4, h4 .accordion-button {font-size: calc(1.3rem + .6vw);}
+h4, h5, h6 {padding: .25rem 0px .25rem 0px;}
+h5, h5 .accordion-button, th {font-size: calc(1.275rem + .3vw);}
+h6, .btn, h6 .accordion-button {font-size: 1.25rem;}
+
+h3, .btn, h3 .accordion-button, .accordion-header {font-size: 1.7rem;} /*increase size of h3 accordion heading*/
+h3.accordion-header {padding: 0px;text-decoration: none;}/*no underline for h3 accordion headings*/
+
+@media (min-width: 1200px) {
+	h2 {font-size: 2.5rem;}
+	h3 {font-size: 2rem;}
+	h4, h4 .accordion-button {font-size: 1.75rem;}
+	h5, h5 .accordion-button  {font-size: 1.5rem;}
+}
+
+.Waterloo h1 {background: var(--black); color: var(--UW3);}
+
+.Waterloo h2 {border-top: 0.1em solid var(--UW4);
+    border-bottom: 0.1em solid var(--UW4);} 
+.Waterloo h3 {text-decoration-color: var(--UW3);}
+
+.Waterloo .primary-color {color: var(--UW3);}
+.Waterloo .dark-color {color: var(--UW4);}
+.Waterloo .light-background {background: var(--tUW1);}
+.Waterloo .bright-background {background: var(--tUW2);}
+.Waterloo .primary-background {background: var(--tUW3);}
+.Waterloo .dark-background {background: var(--tUW4);}
+
+.Concept h1 {background: var(--black); color: var(--Concept3);}
+
+.Concept h2 {border-top: 0.1em solid var(--Concept4);
+    border-bottom: 0.1em solid var(--Concept4);} 
+.Concept h3 {text-decoration-color: var(--Concept3);}
+
+.Concept .primary-color {color: var(--Concept3);}
+.Concept .dark-color {color: var(--Concept4);}
+.Concept .light-background {background: var(--tConcept1);}
+.Concept .bright-background {background: var(--tConcept2);}
+.Concept .primary-background {background: var(--tConcept3);}
+.Concept .dark-background {background: var(--tConcept4);}
+
+.Manulife h1 {background: var(--Manulife3); color: var(--white);}
+
+.Manulife h2 {border-top: 0.1em solid var(--Manulife3);
+    color: var(--Manulife4);
+    border-bottom: 0.1em solid var(--Manulife4);} 
+.Manulife h3 {text-decoration-color: var(--Manulife3);}
+
+.Manulife .primary-color {color: var(--Manulife3);}
+.Manulife .dark-color {color: var(--Manulife4);}
+.Manulife .light-background {background: var(--tManulife1);}
+.Manulife .bright-background {background: var(--tManulife2);}
+.Manulife .primary-background {background: var(--tManulife3);}
+.Manulife .dark-background {background: var(--tManulife4);}
+
+.D2L h1 {background: var(--black); color: var(--D2L3);}
+
+.D2L h2 {border-top: 0.1em solid var(--D2L4);
+    border-bottom: 0.1em solid var(--D2L4);} 
+.D2L h3 {text-decoration-color: var(--D2L3);}
+
+.D2L .primary-color {color: var(--D2L3);}
+.D2L .dark-color {color: var(--D2L4);}
+.D2L .light-background {background: var(--tD2L1);}
+.D2L .bright-background {background: var(--tD2L2);}
+.D2L .primary-background {background: var(--tD2L3);}
+.D2L .dark-background {background: var(--tD2L4);}
+
+.Deloitte h1 {background: var(--black); color: var(--Deloitte3);}
+
+.Deloitte h2 {border-top: 0.1em solid var(--Deloitte3);
+    border-bottom: 0.1em solid var(--Deloitte3);} 
+.Deloitte h3 {text-decoration-color: var(--Deloitte3);}
+
+.Deloitte .primary-color {color: var(--Deloitte3);}
+.Deloitte .dark-color {color: var(--Deloitte4);}
+.Deloitte .light-background {background: var(--tDeloitte1);}
+.Deloitte .bright-background {background: var(--tDeloitte2);}
+.Deloitte .primary-background {background: var(--tDeloitte3);}
+.Deloitte .dark-background {background: var(--tDeloitte4);}
+
+.Microsoft h1 {background: var(--black); color: var(--Microsoft3);}
+
+.Microsoft h2 {border-top: 0.1em solid var(--Microsoft4);
+    border-bottom: 0.1em solid var(--Microsoft4);} 
+.Microsoft h3 {text-decoration-color: var(--Microsoft3);}
+
+.Microsoft .primary-color {color: var(--Microsoft3);}
+.Microsoft .dark-color {color: var(--Microsoft4);}
+.Microsoft .light-background {background: var(--tMicrosoft1);}
+.Microsoft .bright-background {background: var(--tMicrosoft2);}
+.Microsoft .primary-background {background: var(--tMicrosoft3);}
+.Microsoft .dark-background {background: var(--tMicrosoft4);}
+
+.AltaML h1 {background: var(--AltaML4); color:  white;}
+
+.AltaML h2 {border-top: 0.1em solid var(--AltaML4);
+    border-bottom: 0.1em solid var(--AltaML4);} 
+.AltaML h3 {text-decoration-color: var(--AltaML3);}
+
+.AltaML .primary-color {color: var(--AltaML3);}
+.AltaML .dark-color {color: var(--AltaML4);}
+.AltaML .light-background {background: var(--tAltaML1);}
+.AltaML .bright-background {background: var(--tAltaML2);}
+.AltaML .primary-background {background: var(--tAltaML3);}
+.AltaML .dark-background {background: var(--tAltaML4);}
+
+/* ACCORDIONS */
+.accordion {margin-bottom: 1.5rem;}
+h3.accordion-header, h4.accordion-header, h5.accordion-header, h6.accordion-header {padding: 0px; text-decoration: none;} /*no underline for accordion headings*/
+h4.accordion-header {margin-top: 0px;}
+.accordion-item:first-of-type .accordion-button, .card-header:first-child, .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--black); }
+.accordion-item:last-of-type .accordion-collapse, .accordion-item:last-of-type .accordion-button.collapsed, .list-group-item:last-of-type {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+.Waterloo .accordion-button, .Waterloo .accordion-collapse {border: 1px solid var(--UW3);}
+.Waterloo .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--UW3);
+} 
+.Waterloo .accordion-button:not(.collapsed) {
+    background-color: var(--UW3);
+}
+.Waterloo .accordion-button:hover {
+	background-color: var(--UW3);
+}
+.Concept .accordion-button, .Concept .accordion-collapse {border: 1px solid var(--Concept3);}
+.Concept .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--Concept3);
+} 
+.Concept .accordion-button:not(.collapsed) {
+    background-color: var(--Concept3);
+}
+.Concept .accordion-button:hover {
+  background-color: var(--Concept3);
+}
+
+.Manulife .accordion-button, .Manulife .accordion-collapse {border: 1px solid var(--Manulife1);}
+.Manulife .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--Manulife1);
+} 
+.Manulife .accordion-button:not(.collapsed) {
+    background-color: var(--Manulife1);
+}
+.Manulife .accordion-button:hover {
+  background-color: var(--Manulife1);
+}
+
+.D2L .accordion-button, .D2L .accordion-collapse {border: 1px solid var(--D2L3);}
+.D2L .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--D2L3);
+} 
+.D2L .accordion-button:not(.collapsed) {
+    background-color: var(--D2L3);
+}
+.D2L .accordion-button:hover {
+  background-color: var(--D2L3);
+}
+
+.Deloitte .accordion-button, .Deloitte .accordion-collapse {border: 1px solid var(--Deloitte3);}
+.Deloitte .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--Deloitte3);
+} 
+.Deloitte .accordion-button:not(.collapsed) {
+    background-color: var(--Deloitte3);
+}
+.Deloitte .accordion-button:hover {
+  background-color: var(--Deloitte3);
+}
+
+.Microsoft .accordion-button, .Microsoft .accordion-collapse {border: 1px solid var(--Microsoft3);}
+.Microsoft .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--Microsoft3);
+} 
+.Microsoft .accordion-button:not(.collapsed) {
+    background-color: var(--Microsoft3);
+}
+.Microsoft .accordion-button:hover {
+  background-color: var(--Microsoft3);
+}
+
+.AltaML .accordion-button, .AltaML .accordion-collapse {border: 1px solid var(--AltaML3);}
+.AltaML .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--AltaML3);
+} 
+.AltaML .accordion-button:not(.collapsed) {
+    background-color: var(--AltaML3);
+}
+.AltaML .accordion-button:hover {
+  background-color: var(--AltaML3);
+}
+
+
+ /* BUTTONS */
+.btn{
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    overflow: hidden;
+    border-radius: 0px;
+    padding: 1rem;
+    margin: 1em;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.btn i {
+    line-height: 1.5;
+}
+.btn:focus, .btn-check:active+.btn:focus, .btn-check:checked+.btn:focus, .btn.active:focus, .btn:active:focus, .show>.btn.dropdown-toggle:focus {
+    transition: all 300ms ease-in-out;
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+}
+.btn:hover, .btn:focus, .btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn:active, .show>.btn.dropdown-toggle {
+    transition: all 200ms ease-in-out;
+}
+.btn:hover span, .btn:hover i {
+    position: relative;
+    transition: all 200ms ease-in-out;
+ }
+.btn:hover span {
+    box-shadow: 0 3px 0 -1px currentColor; 
+    left: -4px;
+ }
+.btn:hover i {
+    right: -4px;
+}
+.btn:focus i {
+    display:none;
+}
+.btn:focus span {
+    box-shadow: 0 3px 0 -1px transparent;
+    left: 0px;
+}
+.Waterloo .btn{
+    background-color: var(--UW2);
+}
+.Waterloo .btn:focus, .btn-check:active+.Waterloo .btn:focus, .btn-check:checked+.Waterloo .btn:focus, .Waterloo .btn.active:focus, .Waterloo .btn:active:focus, .show>.Waterloo .btn.dropdown-toggle:focus {
+    border-color: var(--UW2);
+    box-shadow: 0 0 0 0.25rem var(--UW1);
+}
+.Waterloo .btn:hover, .Waterloo .btn:focus, .btn-check:active+.Waterloo .btn, .btn-check:checked+.Waterloo .btn, .Waterloo .btn.active, .Waterloo .btn:active, .show>.Waterloo .btn.dropdown-toggle {
+    border-color: var(--UW2);
+    background-color: var(--UW1);
+}  
+.Concept .btn{
+    background-color: var(--Concept2);
+}
+.Concept .btn:focus, .btn-check:active+.Concept .btn:focus, .btn-check:checked+.Concept .btn:focus, .Concept .btn.active:focus, .Concept .btn:active:focus, .show>.Concept .btn.dropdown-toggle:focus {
+    border-color: var(--Concept2);
+    box-shadow: 0 0 0 0.25rem var(--Concept1);
+}
+.Concept .btn:hover, .Concept .btn:focus, .btn-check:active+.Concept .btn, .btn-check:checked+.Concept .btn, .Concept .btn.active, .Concept .btn:active, .show>.Concept .btn.dropdown-toggle {
+    border-color: var(--Concept2);
+    background-color: var(--Concept1);
+} 
+.Manulife .btn{
+    background-color: var(--Manulife2);
+    color: var(--white);
+}
+.Manulife .btn:focus, .btn-check:active+.Manulife .btn:focus, .btn-check:checked+.Manulife .btn:focus, .Manulife .btn.active:focus, .Manulife .btn:active:focus, .show>.Manulife .btn.dropdown-toggle:focus {
+    border-color: var(--Manulife2);
+    box-shadow: 0 0 0 0.25rem var(--Manulife1);
+}
+.Manulife .btn:hover, .Manulife .btn:focus, .btn-check:active+.Manulife .btn, .btn-check:checked+.Manulife .btn, .Manulife .btn.active, .Manulife .btn:active, .show>.Manulife .btn.dropdown-toggle {
+    border-color: var(--Manulife2);
+    background-color: var(--Manulife1);
+} 
+
+.D2L .btn{
+    background-color: var(--D2L2);
+    color: var(--white);
+}
+.D2L .btn:focus, .btn-check:active+.D2L .btn:focus, .btn-check:checked+.D2L .btn:focus, .D2L .btn.active:focus, .D2L .btn:active:focus, .show>.D2L .btn.dropdown-toggle:focus {
+    border-color: var(--D2L2);
+    box-shadow: 0 0 0 0.25rem var(--D2L1);
+}
+.D2L .btn:hover, .D2L .btn:focus, .btn-check:active+.D2L .btn, .btn-check:checked+.D2L .btn, .D2L .btn.active, .D2L .btn:active, .show>.D2L .btn.dropdown-toggle {
+    border-color: var(--D2L2);
+    background-color: var(--D2L1);
+}
+
+.Deloitte .btn{
+    background-color: var(--Deloitte2);
+    color: var(--white);
+}
+.Deloitte .btn:focus, .btn-check:active+.Deloitte .btn:focus, .btn-check:checked+.Deloitte .btn:focus, .Deloitte .btn.active:focus, .Deloitte .btn:active:focus, .show>.Deloitte .btn.dropdown-toggle:focus {
+    border-color: var(--Deloitte2);
+    box-shadow: 0 0 0 0.25rem var(--Deloitte1);
+}
+.Deloitte .btn:hover, .Deloitte .btn:focus, .btn-check:active+.Deloitte .btn, .btn-check:checked+.Deloitte .btn, .Deloitte .btn.active, .Deloitte .btn:active, .show>.Deloitte .btn.dropdown-toggle {
+    border-color: var(--Deloitte2);
+    background-color: var(--Deloitte1);
+} 
+
+.Microsoft .btn{
+    background-color: var(--Microsoft2);
+}
+.Microsoft .btn:focus, .btn-check:active+.Microsoft .btn:focus, .btn-check:checked+.Microsoft .btn:focus, .Microsoft .btn.active:focus, .Microsoft .btn:active:focus, .show>.Microsoft .btn.dropdown-toggle:focus {
+    border-color: var(--Microsoft2);
+    box-shadow: 0 0 0 0.25rem var(--Microsoft1);
+}
+.Microsoft .btn:hover, .Microsoft .btn:focus, .btn-check:active+.Microsoft .btn, .btn-check:checked+.Microsoft .btn, .Microsoft .btn.active, .Microsoft .btn:active, .show>.Microsoft .btn.dropdown-toggle {
+    border-color: var(--Microsoft2);
+    background-color: var(--Microsoft1);
+} 
+
+.AltaML .btn{
+    background-color: var(--AltaML2);
+}
+.AltaML .btn:focus, .btn-check:active+.AltaML .btn:focus, .btn-check:checked+.AltaML .btn:focus, .AltaML .btn.active:focus, .AltaML .btn:active:focus, .show>.AltaML .btn.dropdown-toggle:focus {
+    border-color: var(--AltaML2);
+    box-shadow: 0 0 0 0.25rem var(--AltaML1);
+}
+.AltaML .btn:hover, .AltaML .btn:focus, .btn-check:active+.AltaML .btn, .btn-check:checked+.AltaML .btn, .AltaML .btn.active, .AltaML .btn:active, .show>.AltaML .btn.dropdown-toggle {
+    border-color: var(--AltaML2);
+    background-color: var(--AltaML1);
+} 
+
+/* CALLOUT */
+.Waterloo .callout {
+    border: 4px double var(--UW4);
+}
+.Waterloo .callout i, .Waterloo .callout strong {color:var(--UW4);}
+.Concept .callout {
+    border: 4px double var(--Concept4);
+}
+.Concept .callout i, .Concept .callout strong {color:var(--Concept4);}
+
+.Manulife .callout {
+    border: 4px double var(--Manulife4);
+}
+.Manulife .callout i, .Concept .callout strong {color:var(--Manulife4);}
+
+.D2L .callout {
+    border: 4px double var(--D2L4);
+}
+.D2L .callout i, .D2L .callout strong {color:var(--D2L4);}
+
+.Deloitte .callout {
+    border: 4px double var(--Deloitte4);
+}
+.Deloitte .callout i, .Deloitte .callout strong {color:var(--Deloitte4);}
+.Microsoft .callout {
+    border: 4px double var(--Microsoft4);
+}
+.Microsoft .callout i, .Microsoft .callout strong {color:var(--Microsoft4);}
+
+.AltaML .callout {
+    border: 4px double var(--AltaML4);
+}
+.AltaML .callout i, .AltaML .callout strong {color:var(--AltaML4);}
+
+/* CARDS */
+.card {border-radius: 0px;}
+
+.Waterloo .light.card {border: 1px solid var(--UW3);}
+.Waterloo .light .card-header {
+    background-color: var(--UW3);
+    border-bottom: 1px solid var(--UW3);
+}
+.Waterloo .dark.card {border: 1px solid var(--UW4);}
+.Waterloo .dark .card-header {
+    background-color: var(--UW4);
+    border-bottom: 1px solid var(--UW4);
+}
+.Concept .light.card {border: 1px solid var(--Concept3);}
+.Concept .light .card-header {
+    background-color: var(--Concept3);
+    border-bottom: 1px solid var(--Concept3);
+}
+.Concept .dark.card {border: 1px solid var(--Concept4);}
+.Concept .dark .card-header {
+    background-color: var(--Concept4);
+    border-bottom: 1px solid var(--Concept4);
+}
+.Manulife .light.card {border: 1px solid var(--Manulife3);}
+.Manulife .light .card-header {
+    background-color: var(--Manulife3);
+    border-bottom: 1px solid var(--Manulife3);
+    color: var(--white);
+}
+.Manulife .dark.card {border: 1px solid var(--Manulife4);}
+.Manulife .dark .card-header {
+    background-color: var(--Manulife4);
+    border-bottom: 1px solid var(--Manulife4);
+    color: var(--white);
+}
+
+.D2L .light.card {border: 1px solid var(--D2L3);}
+.D2L .light .card-header {
+    background-color: var(--D2L3);
+    border-bottom: 1px solid var(--D2L3);
+}
+.D2L .dark.card {border: 1px solid var(--D2L4);}
+.D2L .dark .card-header {
+    background-color: var(--D2L4);
+    border-bottom: 1px solid var(--D2L4);
+}
+
+.Deloitte .light.card {border: 1px solid var(--Deloitte3);}
+.Deloitte .light .card-header {
+    background-color: var(--Deloitte3);
+    border-bottom: 1px solid var(--Deloitte3);
+}
+.Deloitte .dark.card {border: 1px solid var(--Deloitte4);}
+.Deloitte .dark .card-header {
+    background-color: var(--Deloitte4);
+    border-bottom: 1px solid var(--Deloitte4);
+}
+
+.Microsoft .light.card {border: 1px solid var(--Microsoft3);}
+.Microsoft .light .card-header {
+    background-color: var(--Microsoft3);
+    border-bottom: 1px solid var(--Microsoft3);
+}
+.Microsoft .dark.card {border: 1px solid var(--Microsoft4);}
+.Microsoft .dark .card-header {
+    background-color: var(--Microsoft4);
+    border-bottom: 1px solid var(--Microsoft4);
+}
+.AltaML .light.card {border: 1px solid var(--AltaML3);}
+.AltaML .light .card-header {
+    background-color: var(--AltaML3);
+    border-bottom: 1px solid var(--AltaML3);
+}
+.AltaML .dark.card {border: 1px solid var(--AltaML4);}
+.AltaML .dark .card-header {
+    background-color: var(--AltaML4);
+    color: white;
+    border-bottom: 1px solid var(--AltaML4);
+}
+
+/* CAROUSEL */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 37.5rem; /*600px*/
+}
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    max-width: 56.25rem; /*900px*/
+    margin: 0 auto;
+    min-height: auto;
+    transition: height 0.3s ease-in-out;
+    max-height: 37.5rem; /*600px*/
+    overflow-y: auto;
+}
+.carouselicon {
+    font-size: 6em;
+    text-align: center;
+    padding-top: 1rem;
+}
+.carouselimg {
+    width: 100%;
+}
+.carousel-caption {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1rem;
+    max-width: 100%;
+    position: absolute;
+    margin-bottom: 1.5rem;
+    max-height: 25rem; /*400px*/
+    overflow-y: auto;  
+    scrollbar-color: #1414149e transparent;
+}
+.carousel-caption::-webkit-scrollbar {
+    width: 0.4rem;
+}
+.carousel-caption::-webkit-scrollbar-thumb {
+    background-color: #1414149e;
+}
+.carousel-indicators [data-bs-target] {
+    height: auto;
+    text-indent: 0px;
+    padding: 0px 0.5em;
+    width: auto;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #000000;
+    opacity: 0.7;
+}
+.carousel-indicators .active {
+    opacity: 1;
+}
+.carousel-control-next, .carousel-control-prev {
+    top: 40%;
+    z-index: 2;
+    font-size: 2rem;
+}
+@media (max-width: 650px) {
+    .carousel-inner {
+        max-height: 34.5rem; /*552px*/
+    }
+    .carousel-caption {
+        max-height: 22rem; /*352px*/
+    }
+}
+@media (max-width: 320px) {
+    .carousel-inner {
+        height: auto;
+        max-height: 37.5rem; /*600px*/
+    }
+    .carousel-caption {
+        font-size: 1rem;
+        text-align: center;
+        position: absolute;
+        padding: 1rem;
+        max-height: 25rem; /*400px*/
+    }
+    .carouselicon {
+        font-size: 5rem; 
+        padding-top: 1rem;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 1.5rem;
+    }
+}
+.img-carousel {
+    max-height: 37.5rem; /*600px*/
+    .carousel-caption {
+        position: static;
+        padding: 1rem 7rem 2rem;
+    }
+    @media (max-width: 650px) {
+        .carousel-caption {
+            padding-bottom: 2rem;
+        }
+    }
+    @media (max-width: 320px) {
+        .carousel-caption {
+            position: static;
+            padding: 1rem 3.2rem 3rem;
+        }
+        .carousel-control-next, .carousel-control-prev {
+            top: 30%;
+        }
+    }
+}
+
+.Waterloo .carouselicon i {color:var(--UW3);}
+.Waterloo .carousel-indicators [data-bs-target] {background-color: var(--UW1);}
+.Waterloo .carousel-indicators .active {background-color: var(--UW2);}
+
+.Concept .carouselicon i {color:var(--Concept3);}
+.Concept .carousel-indicators [data-bs-target] {background-color: var(--Concept1);}
+.Concept .carousel-indicators .active {background-color: var(--Concept2);}
+
+.Manulife .carouselicon i {color:var(--Manulife3);}
+.Manulife .carousel-indicators [data-bs-target] {background-color: var(--Manulife1);}
+.Manulife .carousel-indicators .active {background-color: var(--Manulife2);}
+
+.D2L .carouselicon i {color:var(--D2L3);}
+.D2L .carousel-indicators [data-bs-target] {background-color: var(--D2L1);}
+.D2L .carousel-indicators .active {background-color: var(--D2L2);}
+
+.Deloitte .carouselicon i {color:var(--Deloitte3);}
+.Deloitte .carousel-indicators [data-bs-target] {background-color: var(--Deloitte1);}
+.Deloitte .carousel-indicators .active {background-color: var(--Deloitte2);}
+
+.Microsoft .carouselicon i {color:var(--Microsoft3);}
+.Microsoft .carousel-indicators [data-bs-target] {background-color: var(--Microsoft1);}
+.Microsoft .carousel-indicators .active {background-color: var(--Microsoft2);}
+
+.AltaML .carouselicon i {color:var(--AltaML3);}
+.AltaML .carousel-indicators [data-bs-target] {background-color: var(--AltaML1);}
+.AltaML .carousel-indicators .active {background-color: var(--AltaML2);}
+
+
+/* CODE */
+.Manulife code {
+    color: var(--Manulife4);
+}
+.Manulife kbd {
+    background-color: var(--Manulife4);
+}
+
+/* LIST GROUP */
+.list-group, .list-group-item {height: 100%;}
+.data .list-group-item {outline: 4px dashed; border: none; line-height: 2;}
+.list-group-item strong {
+    font-size: calc(1.575rem + 3.9vw);
+    line-height: 1.2;
+    padding-right: 0.1em;
+} 
+@media (min-width: 1200px) {.list-group-item strong {font-size: 4.5rem;}}
+.data .list-group-item {padding: 7%;}
+.Waterloo .list-group-item {outline-color: var(--UW4);border-color: var(--UW3);}
+
+.Concept .list-group-item {outline-color: var(--Concept4);border-color: var(--Concept3);}
+
+.Manulife .list-group-item {outline-color: var(--Manulife4);border-color: var(--Manulife3);}
+
+.D2L .list-group-item {outline-color: var(--D2L4);border-color: var(--D2L3);}
+
+.Deloitte .list-group-item {outline-color: var(--Deloitte4);border-color: var(--Deloitte3);}
+
+.Microsoft .list-group-item {outline-color: var(--Microsoft4);border-color: var(--Microsoft3);}
+
+.AltaML .list-group-item {outline-color: var(--AltaML4);border-color: var(--AltaML3);}
+
+
+/* GRID */
+.shadowgrid {height: calc(100% - 1em);}
+
+/* ICONS */
+p i {
+    border-radius: 50px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    line-height: 50px !important;
+    text-align:center;
+}
+.dt-icons img {opacity: 0.25}
+.dt-icons .selected {opacity: 1}
+
+.Waterloo p i {
+    background: var(--UW3);}
+
+.Waterloo .fad:before {color: var(--UW4);}
+.Waterloo .fad:after {color: var(--UW1);opacity:1;}
+
+.Concept p i {
+    background: var(--Concept3);}
+
+.Concept .fad:before {color: var(--Concept4);}
+.Concept .fad:after {color: var(--Concept1);opacity:1;}
+
+.Manulife p i {
+    background: var(--Manulife3);}
+
+.Manulife .fad:before {color: var(--Manulife4);}
+.Manulife .fad:after {color: var(--Manulife1);opacity:1;}
+.Manulife h1 i {color: var(--Manulife1);}
+
+.D2L p i {
+    background: var(--D2L3);}
+
+.D2L .fad:before {color: var(--D2L4);}
+.D2L .fad:after {color: var(--D2L1);opacity:1;}
+
+.Deloitte p i {
+    background: var(--Deloitte3);}
+
+.Deloitte .fad:before {color: var(--Deloitte4);}
+.Deloitte .fad:after {color: var(--Deloitte1);opacity:1;}
+
+.Microsoft p i {
+    background: var(--Microsoft3);}
+
+.Microsoft .fad:before {color: var(--Microsoft4);}
+.Microsoft .fad:after {color: var(--Microsoft1);opacity:1;}
+
+.AltaML p i {
+    background: var(--AltaML3);}
+
+.AltaML .fad:before {color: var(--AltaML1);}
+.AltaML .fad:after {color: var(--AltaML3);opacity:1;}
+
+/* REFLECTIONS */
+.Waterloo .reflection {border-top: 4px solid var(--UW4);
+    border-bottom: 4px solid var(--UW4);}
+.Concept .reflection {border-top: 4px solid var(--Concept4);
+    border-bottom: 4px solid var(--Concept4);}
+.Manulife .reflection {border-top: 4px solid var(--Manulife4);
+    border-bottom: 4px solid var(--Manulife4);}
+.D2L .reflection {border-top: 4px solid var(--D2L4);
+    border-bottom: 4px solid var(--D2L4);}
+.Deloitte .reflection {border-top: 4px solid var(--Deloitte4);
+    border-bottom: 4px solid var(--Deloitte4);}
+.Microsoft .reflection {border-top: 4px solid var(--Microsoft4);
+    border-bottom: 4px solid var(--Microsoft4);}
+.AltaML .reflection {border-top: 4px solid var(--AltaML4);
+    border-bottom: 4px solid var(--AltaML4);}
+
+/* TABLES */
+.Waterloo .table {
+  border-color: var(--UW4);
+}
+.Waterloo th {
+  background: var(--UW4);
+}
+.Concept .table {
+  border-color: var(--Concept4);
+}
+.Concept th {
+  background: var(--Concept4);
+}
+.Manulife .table {
+  border-color: var(--Manulife4);
+}
+.Manulife th {
+  background: var(--Manulife4);
+  color: var(--white);
+}
+.D2L .table {
+  border-color: var(--D2L4);
+}
+.D2L th {
+  background: var(--D2L4);
+}
+.Deloitte .table {
+  border-color: var(--Deloitte4);
+}
+.Deloitte th {
+  background: var(--Deloitte4);
+}
+
+.Microsoft .table {
+  border-color: var(--Microsoft4);
+}
+.Microsoft th {
+  background: var(--Microsoft4);
+}
+.AltaML .table {
+  border-color: var(--AltaML4);
+}
+.AltaML th {
+  background: var(--AltaML4);
+}
+
+/* VIDEOS */
+.Waterloo .video {border-top: 4px solid var(--UW2);
+    border-bottom: 4px solid var(--UW2);}
+.Concept .video {border-top: 4px solid var(--Concept2);
+    border-bottom: 4px solid var(--Concept2);}
+.Manulife .video {border-top: 4px solid var(--Manulife2);
+    border-bottom: 4px solid var(--Manulife2);}
+.D2L .video {border-top: 4px solid var(--D2L2);
+    border-bottom: 4px solid var(--D2L2);}
+.Deloitte .video {border-top: 4px solid var(--Deloitte2);
+    border-bottom: 4px solid var(--Deloitte2);}
+.Microsoft .video {border-top: 4px solid var(--Microsoft2);
+    border-bottom: 4px solid var(--Microsoft2);}
+.AltaML .video {border-top: 4px solid var(--AltaML2);
+    border-bottom: 4px solid var(--AltaML2);}
+
+/* HOMEPAGES */
+.homepage p {font-family: 'Roboto', sans-serif; font-weight: 300;color: var(--black) !important;}
+.homepage .Waterloo h2, .homepage .Concept h2, .homepage .Deloitte h2, .homepage .Microsoft h2 {color: var(--black) !important;}
+.homepage .Waterloo a.btn, .homepage .Concept a.btn, .homepage .Microsoft a.btn{
+  color: var(--black) !important;
+    
+}
+.homepage .Manulife a.btn, .homepage .D2L a.btn, .homepage .Deloitte a.btn{
+  color: var(--white) !important;
+    
+}
+.homepage a.btn:focus, .homepage a.btn:hover {
+text-decoration: none !important;
+} 
+
+.homepage a.btn {
+    font-size: 1rem;
+}
+
+/* Links */
+/* adds link-out icon after target="_blank" links */
+a[target="_blank"]:after {
+    font-family: "Font Awesome 6 Pro";
+    content: "\f08e";
+    display: inline-block;
+    height: 16px;
+    left: 5px;
+    position: relative;
+    top: -2px;
+    width: 21px;
+    font-size: 0.7em;
+  }
+  
